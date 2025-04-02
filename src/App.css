@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+.App {
+  text-align: center;
+}
+
+.welcome-section {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+.carousel img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #343a40;
+}
