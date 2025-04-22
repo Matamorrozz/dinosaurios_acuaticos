@@ -29,7 +29,7 @@ const Home = () => {
       </main>
       <footer style={styles.footer}>
         <p style={styles.footerText}>
-          🚀 Diseñado para los amantes de los dinosaurios | © 2024 MaxiDinos
+          🚀 Diseñado para los amantes de los dinosaurios | © 2025 MaxiDinos
         </p>
       </footer>
     </div>
@@ -44,7 +44,7 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     fontFamily: "'Poppins', sans-serif",
-    padding: '20px',
+    padding: '40px',
   },
   header: {
     textAlign: 'center',

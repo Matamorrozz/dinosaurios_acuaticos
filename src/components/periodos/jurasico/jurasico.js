@@ -43,6 +43,7 @@ function Jurasico() {
         ))}
       </div>
 
+      {/* Mapa */}
       <div style={styles.mapSection}>
         <h2 style={styles.mapTitle}>Mapa de Ubicaciones de Fósiles</h2>
         <MapContainer center={[47.0, -2.0]} zoom={5} style={styles.map}>
@@ -60,14 +61,15 @@ function Jurasico() {
 
 const styles = {
   pageContainer: {
-    backgroundColor: '#f9f9f9',
+    background: 'linear-gradient(135deg, #1f1c2c, #928dab)',
     minHeight: '100vh',
     padding: '20px',
-    fontFamily: "'Roboto', sans-serif",
+    fontFamily: "'Poppins', sans-serif",
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     gap: '40px',
+    color: '#f1f1f1',
   },
   header: {
     textAlign: 'center',
@@ -75,13 +77,13 @@ const styles = {
     marginTop: '20px',
   },
   title: {
-    fontSize: '2.5rem',
-    color: '#2c3e50',
+    fontSize: '3rem',
+    color: '#ffdd57',
     marginBottom: '20px',
   },
   description: {
-    fontSize: '1.2rem',
-    color: '#555',
+    fontSize: '1.5rem',
+    color: '#e0e0e0',
     lineHeight: '1.6',
   },
   gallery: {
@@ -92,9 +94,10 @@ const styles = {
     maxWidth: '1200px',
   },
   card: {
-    backgroundColor: '#fff',
+    background: 'rgba(255, 255, 255, 0.15)',
+    backdropFilter: 'blur(8px)',
     borderRadius: '12px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
     width: '220px',
     textAlign: 'center',
     overflow: 'hidden',
@@ -108,36 +111,29 @@ const styles = {
   cardTitle: {
     margin: '10px 0',
     fontSize: '1.2rem',
-    color: '#333',
+    color: '#f1f1f1',
   },
   cardLink: {
     textDecoration: 'none',
-    color: '#007bff',
+    color: '#ffdd57',
     fontWeight: 'bold',
     transition: 'color 0.3s',
-  },
-  cardLinkHover: {
-    color: '#0056b3',
-  },
-  cardHover: {
-    transform: 'scale(1.05)',
-    boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',
   },
   mapSection: {
     width: '100%',
     maxWidth: '1200px',
+    textAlign: 'center',
   },
   mapTitle: {
-    fontSize: '1.8rem',
-    color: '#2c3e50',
+    fontSize: '2rem',
+    color: '#ffdd57',
     marginBottom: '20px',
-    textAlign: 'center',
   },
   map: {
     height: '400px',
+    width: '100%',
     borderRadius: '12px',
-    overflow: 'hidden',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
   },
 };
 
